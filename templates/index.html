@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="facts">
+<ol>
+{% for f in facts %}
+<li>{{ f.text }}</li>
+{% endfor %}
+</ol>
+</div>
+
+<div id="testimonials">
+{% for t in testimonials %}
+<p>{{ t.text }}</p>
+<p>By {{ t.author }}</p>
+{% endfor %}
+</div>
+
+{% endblock %}
