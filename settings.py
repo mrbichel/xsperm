@@ -22,7 +22,7 @@ else:
     
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (('Johan Bichel Lindegaard', 'mr.bichel@gmail.com'),)
+ADMINS = (('Johan Bichel Lindegaard', ''),)
 MANAGERS = ADMINS
 
 TIME_ZONE = 'Europe/Copenhagen'
