@@ -68,6 +68,6 @@ def index(request):
     
     return render_to_response('index.html', {
         'testimonials': testimonials,
-        'fact': choice(funfacts),
-        'funfacts': funfacts,
+        'genfact': choice(funfacts),
+        'facts': facts,
         }, context_instance=RequestContext(request))
