@@ -2,6 +2,9 @@
 
 {% block content %}
 
+
+
+
 <div id="facts">
 <h2>Top Facts</h2>
 <ol>
@@ -10,6 +13,14 @@
 {% endfor %}
 </ol>
 </div>
+
+<div id="genfacts">
+    <h2>Did you know that?</h2>
+    <p id="fact">{{ fact }}</p>
+</div>
+
+<div class="clear"></div>
+
 
 <div id="testimonials">
 <h2>Testimonials</h2>
@@ -20,10 +31,6 @@
 {% endfor %}
 </div>
 
-<div id="genfacts">
-<h2>Did you know that?</h2>
-<p id="fact">{{ fact }}</p>
 
-</div>
 
 {% endblock %}

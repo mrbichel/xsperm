@@ -9,10 +9,19 @@ body {text-align: center;}
 h1 {padding: 0 0 0 40px; 
     font-size: 4em;}
 
-h2 {font-size: 3em;}
+h2 {font-size: 1.8em;}
 
 #content {text-align: left;}
 
 span.sigurd {margin-left: 100px;}
 span.sperm {margin-left: 50px;}
 span.facts {margin-left: 0;}
+
+.clear {clear: both;} 
+#facts {float:left; width: 400px;}
+#genfacts {float: right; width: 200px;}
+
+#genfacts h2 {}
+#fact {font-size: 1em; font-weight: bolder; padding-bottom: 18px;}
+
+#testimonials {border-top: 1px dotted black;}
