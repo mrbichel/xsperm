@@ -1,0 +1,18 @@
+body {text-align: center;}
+.container {margin: 0 auto; 
+    width: 600px;}
+#header {background: white url(../img/bg_top.jpg) no-repeat;
+    height: 323px;
+    text-align: left;
+    position: relative;}
+    
+h1 {padding: 0 0 0 40px; 
+    font-size: 4em;}
+
+h2 {font-size: 3em;}
+
+#content {text-align: left;}
+
+span.sigurd {margin-left: 100px;}
+span.sperm {margin-left: 50px;}
+span.facts {margin-left: 0;}

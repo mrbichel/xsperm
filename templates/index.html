@@ -3,6 +3,7 @@
 {% block content %}
 
 <div id="facts">
+<h2>Top Facts</h2>
 <ol>
 {% for f in facts %}
 <li>{{ f.text }}</li>
@@ -11,10 +12,15 @@
 </div>
 
 <div id="testimonials">
+<h2>Testimonials</h2>
 {% for t in testimonials %}
 <p>{{ t.text }}</p>
 <p>By {{ t.author }}</p>
 {% endfor %}
+</div>
+
+<div id="genfacts">
+<h2>Did you know that</h2>
 </div>
 
 {% endblock %}
