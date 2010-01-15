@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from xsperm.utils import filterBadWords
 
 class Testimonial(models.Model):
     title = models.CharField(max_length=120)

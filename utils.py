@@ -1,5 +1,10 @@
+try:
+    from settings import BADWORDS
+except:
+    BADWORDS = [] 
+
 import re
- 
+
 def ireplace(self,old,new,count=0):
 	''' Behaves like string.replace(), but does so in a case-insensitive
 	fashion. '''
@@ -7,12 +12,7 @@ def ireplace(self,old,new,count=0):
 	return re.sub(pattern,new,self,count)
  
 def filterBadWords(string):
-    try:
-        from settings import BADWORDS
-    except:
-        BADWORDS = []
-    
 	for w in BADWORDS:
-		string = string.ireplace(w, "")
+		string = ireplace(string,w, "")
  
 	return string

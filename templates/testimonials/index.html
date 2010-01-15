@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="alltestimonials">
+    <h2>Testimonials</h2>
+    {% for t in testimonials %}
+    <div class="testimonial">
+        <h3>{{ t.title }}</h3>
+        <p>{{ t.text }}</p>
+        <p>By {{ t.author }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<div id="factform">
+
+<h2>Add new testimonial</h2>
+<form method="post" action="">
+    {{ form.as_p }}
+<input type="submit" value="Add">
+
+</form>
+
+</div>
+{% endblock %}
+
+

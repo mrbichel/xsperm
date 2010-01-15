@@ -12,7 +12,7 @@ from testimonials.models import Testimonial
     
 
 def index(request):
-    testimonials = Testimonial.objects.all()
+    testimonials = Testimonial.objects.all()[:3]
     facts = Fact.objects.all()[:9]
         
     objects = ['a kangaroo',

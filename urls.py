@@ -4,9 +4,9 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'views.index', name='index'),
+    url(r'^$', 'views.index', name='main_index'),
     (r'^facts/', include('xsperm.facts.urls')),
-    (r'^facts/', include('xsperm.testimonials.urls')),
+    (r'^testimonials/', include('xsperm.testimonials.urls')),
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),

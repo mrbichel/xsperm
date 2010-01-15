@@ -2,17 +2,14 @@
 
 {% block content %}
 
-
-
-
 <div id="facts">
-<h2>Top Facts</h2>
-<ol id="topfacts">
-{% for f in facts %}
-<li>{{ f.text }}</li>
-{% endfor %}
-</ol>
-<p><a href="{% url fact_list %}">View all facts</a></p>
+    <h2>Top Facts</h2>
+    <ol id="topfacts">
+    {% for f in facts %}
+    <li>{{ f.text }}</li>
+    {% endfor %}
+    </ol>
+    <p><a href="{% url fact_list %}">View all facts</a></p>
 </div>
 
 <div id="genfacts">
@@ -20,18 +17,18 @@
     <p id="fact">{{ genfact }}</p>
 </div>
 
-<div class="clear"></div>
-
+<div class="clear"><!-- --></div>
 
 <div id="testimonials">
-<h2>Testimonials</h2>
-{% for t in testimonials %}
-<h3>{{ t.title }}</h3>
-<p>{{ t.text }}</p>
-<p>By {{ t.author }}</p>
-{% endfor %}
+    <h2>Testimonials</h2>
+    {% for t in testimonials %}
+    <div class="testimonial">
+        <h3>{{ t.title }}</h3>
+        <p>{{ t.text }}</p>
+        <p>By {{ t.author }}</p>
+    </div>
+    {% endfor %}
+    <p><a href="{% url testimonial_list %}">View all testimonials</a></p>
 </div>
-
-
 
 {% endblock %}
