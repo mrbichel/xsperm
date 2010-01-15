@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="allfacts">
+    <h2>Facts</h2>
+    <ol id="topfacts">
+    {% for f in facts %}
+    <li>{{ f.text }}</li>
+    {% endfor %}
+    </ol>
+</div>
+
+<div id="factform">
+
+<h2>Add new facts</h2>
+<form method="post" action="">
+    {{ form }}
+<input type="submit" value="Add">
+
+</form>
+
+</div>
+{% endblock %}
+
+

@@ -1,4 +1,3 @@
-from settings import BADWORDS
 import re
  
 def ireplace(self,old,new,count=0):
@@ -8,6 +7,11 @@ def ireplace(self,old,new,count=0):
 	return re.sub(pattern,new,self,count)
  
 def filterBadWords(string):
+    try:
+        from settings import BADWORDS
+    except:
+        BADWORDS = []
+    
 	for w in BADWORDS:
 		string = string.ireplace(w, "")
  

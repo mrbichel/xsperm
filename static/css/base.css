@@ -1,4 +1,4 @@
-body {text-align: center;}
+body {text-align: center; color: #2e3436;}
 .container {margin: 0 auto; 
     width: 600px;}
 #header {background: white url(../img/bg_top.jpg) no-repeat;
@@ -8,6 +8,10 @@ body {text-align: center;}
     
 h1 {padding: 0 0 0 40px; 
     font-size: 4em;}
+
+a {text-decoration: none;}
+h1 a {color: #2e3436;}
+a:hover, a:active, a:focus {color: #729fcf;}
 
 h2 {font-size: 1.8em;}
 

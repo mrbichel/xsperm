@@ -14,6 +14,10 @@ class Testimonial(models.Model):
     def __unicode__(self):
     	return self.text
     	
-    	
-    	
+    def save(self):
+        self.text = filterBadWords(self.text)
+        self.title = filterBadWords(self.title)
+        self.author = filterBadWords(self.author)
+        super(Testimonial, self).save()	
+    
 
