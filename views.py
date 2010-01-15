@@ -1,15 +1,13 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.http import HttpResponse
-from random import choice
+from random import choice, sample
 
 from facts.models import Fact
 from testimonials.models import Testimonial
 
 #def funfact(request): 
     #return HttpResponse(simplejson.dumps(response_dict), mimetype='application/javascript')
-
-    
 
 def index(request):
     testimonials = Testimonial.objects.all()[:3]
@@ -47,27 +45,33 @@ def index(request):
         'have well formed octuplets',
         'realize the meaning of life',
         'believers',]
-    descriptions = ['hot and curly', 
+    descriptions = ['hot',
         'big busted',
-        'old',
-        'experienced',
+        'old', 
+	    'experienced',
         'Russian',
-        'sweet', 
-        'soft',
-        'teenage (legal aged)',
+        'sweet',
+	    'soft',
+        '(legal aged) teenage',
         'ripe',
         'hysterical',
         'ovulating',
         'Amazon',
         'extremely ugly',
         'obese',
-        'tall and slinky',
+        'tall',
+        'slinky',
         'midget',
-        'curly-haired',]
+        'curly-haired',
+        'tall',
+	    'slinky',
+        'midget',]
+    # Pick two random description
+    descriptionSeq = sample(descriptions, 2)
     
     #fact01 = "Sigurd can impregnate %s just by %s." % (choice(objects), choice(actions))
     fact02 = "Sigurd's semen cures %s." % choice(diseases)
-    fact03 = "Sigurd's sperm makes %s women %s." % (choice(descriptions), choice(effects))
+    fact03 = "Sigurd's sperm makes %s, %s women %s." % (descriptionSeq[0], descriptionSeq[1], choice(effects))
     funfacts = [fact02, fact03]
     
     return render_to_response('index.html', {
