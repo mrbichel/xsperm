@@ -45,12 +45,15 @@ def index(request):
         'moan',
         'gaze at the stars',
         'have well formed octuplets',
-        'realize the meaning of life',]
+        'realize the meaning of life',
+        'believers',]
     descriptions = ['hot and curly', 
         'big busted',
-        'old and experienced',
+        'old',
+        'experienced',
         'Russian',
-        'sweet and soft',
+        'sweet', 
+        'soft',
         'teenage (legal aged)',
         'ripe',
         'hysterical',
@@ -59,7 +62,8 @@ def index(request):
         'extremely ugly',
         'obese',
         'tall and slinky',
-        'midget',]
+        'midget',
+        'curly-haired',]
     
     #fact01 = "Sigurd can impregnate %s just by %s." % (choice(objects), choice(actions))
     fact02 = "Sigurd's semen cures %s." % choice(diseases)

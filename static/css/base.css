@@ -11,7 +11,7 @@ h1 {padding: 0 0 0 40px;
 
 h2 {font-size: 1.8em;}
 
-#content {text-align: left;}
+#content {text-align: left; border-top: 1px dotted black;}
 
 span.sigurd {margin-left: 100px;}
 span.sperm {margin-left: 50px;}
