@@ -22,7 +22,7 @@ span.sperm {margin-left: 50px;}
 span.facts {margin-left: 0;}
 
 .clear {clear: both;} 
-#facts {float:left; width: 400px; padding-right: 30px;}
+#facts {float:left; width: 370px; margin-right: 30px;}
 
 .fact_rate_actions {float: right;}
 
