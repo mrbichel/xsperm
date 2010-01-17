@@ -2,7 +2,7 @@ from django.db import models
 from xsperm.utils import filterBadWords
 
 class Fact(models.Model):
-    text = models.CharField('fact', max_length=140)
+    text = models.CharField('fact', max_length=256)
     rating = models.IntegerField(default=0)
     
     class Meta:
