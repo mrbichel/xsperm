@@ -1,7 +1,7 @@
 *.pyc
 *~
 *.geany
-*.pwc
+*.swp
 dev.db
 settings_local.py
 static/admin
