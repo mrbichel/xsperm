@@ -1,0 +1,11 @@
+<ol id="fact_list">
+    {% for f in facts %}
+        <li>
+            {{ f.text }}
+            <span class="fact_rate_actions">
+                <a href="{% url fact_rate f.id 'up' %}">up</a>
+                <a href="{% url fact_rate f.id 'down' %}">down</a>
+            </span>
+        </li>
+    {% endfor %}
+</ol>

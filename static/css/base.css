@@ -22,13 +22,12 @@ span.sperm {margin-left: 50px;}
 span.facts {margin-left: 0;}
 
 .clear {clear: both;} 
-#facts {float:left; width: 400px;}
-#genfacts {float: right; width: 200px;}
+#facts {float:left; width: 400px; padding-right: 30px;}
 
+.fact_rate_actions {float: right;}
+
+#genfacts {float: right; width: 200px;}
 #genfacts h2 {}
 #fact {font-size: 1em; font-weight: bolder; padding-bottom: 18px;}
 
 #testimonials {border-top: 1px dotted black;}
-
-ol#topfacts {padding-right: 30px;}
-ol#topfacts {font-size: 1.2em; line-height: 1.4em;}
