@@ -24,7 +24,8 @@ span.facts {margin-left: 0;}
 .clear {clear: both;} 
 #facts {float:left; width: 370px; margin-right: 30px;}
 
-.fact_text {width: 70%;}
+#fact_list li {margin-bottom: 14px;}
+.fact_text {width: 220px;}
 .fact_rate_actions {float: right;}
 
 #genfacts {float: right; width: 200px;}
