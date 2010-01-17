@@ -4,11 +4,7 @@
 
 <div id="facts">
     <h2>Top Facts</h2>
-    <ol id="topfacts">
-    {% for f in facts %}
-    <li>{{ f.text }}<span class="fact_rate_actions"><a href="{% url fact_rate f.id 'up' %}">up</a><a href="{% url fact_rate f.id 'down' %}">down</a></span></li>
-    {% endfor %}
-    </ol>
+    {% include 'facts/list_snippet.html' %}
     <p><a href="{% url fact_list %}">View all facts</a></p>
 </div>
 

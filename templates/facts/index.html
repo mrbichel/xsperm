@@ -3,11 +3,7 @@
 {% block content %}
 <div id="allfacts">
     <h2>Facts</h2>
-    <ol id="topfacts">
-    {% for f in facts %}
-    <li>{{ f.text }}</li>
-    {% endfor %}
-    </ol>
+    {% include 'facts/list_snippet.html' %}
 </div>
 
 <div id="factform">
