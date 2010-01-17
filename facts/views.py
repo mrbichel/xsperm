@@ -20,3 +20,14 @@ def index(request):
         'facts': facts,},
         context_instance = RequestContext(request))
     
+def rate(request, id, action):
+    fact = Fact.objects.get(pk=id)
+    
+    if action == 'up':
+        fact.rating += 1
+    elif action == 'down':
+	fact.rating += -1
+    
+    fact.save()
+    return HttpResponseRedirect(reverse('fact_list'))
+
