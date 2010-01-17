@@ -11,7 +11,7 @@ from testimonials.models import Testimonial
 
 def index(request):
     testimonials = Testimonial.objects.all()[:3]
-    facts = Fact.objects.all()[:9]
+    facts = Fact.objects.all()[:10]
         
     objects = ['a kangaroo',
         'a mailbox',
