@@ -48,10 +48,10 @@ def index(request):
     descriptions = ['hot',
         'big busted',
         'old', 
-	    'experienced',
+	'experienced',
         'Russian',
         'sweet',
-	    'soft',
+	'soft',
         '(legal aged) teenage',
         'ripe',
         'hysterical',
@@ -64,7 +64,6 @@ def index(request):
         'midget',
         'curly-haired',
         'tall',
-	    'slinky',
         'midget',]
     # Pick two random description
     descriptionSeq = sample(descriptions, 2)
