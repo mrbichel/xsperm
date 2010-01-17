@@ -3,8 +3,8 @@
         <li>
             <p class="fact_text">{{ f.text }}</p>
             <span class="fact_rate_actions">
-                <a href="{% url fact_rate f.id 'up' %}">up</a><br />
-                <a href="{% url fact_rate f.id 'down' %}">down</a>
+                <a href="{% url fact_rate f.id 'up' %}">+</a>
+                <a href="{% url fact_rate f.id 'down' %}">-</a>
             </span>
         </li>
     {% endfor %}
